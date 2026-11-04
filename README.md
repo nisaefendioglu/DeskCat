@@ -29,12 +29,22 @@ After your chosen away time (default ~1 minute), Pip **meows once** for that awa
 - Language: System / English / Turkish
 - Menu bar–only app (`LSUIElement`) — no Dock icon while idle
 
+## Download
+
+Grab the latest **`.dmg`** from [Releases](https://github.com/nisaefendioglu/DeskCat/releases):
+
+1. Open `DeskCat-x.y.z.dmg`
+2. Drag **DeskCat** into **Applications**
+3. Launch from Applications (or Spotlight)
+
+First launch on a Mac without Developer ID notarization: right-click DeskCat → **Open**, then confirm. You can also allow it under **System Settings → Privacy & Security**.
+
 ## Requirements
 
 - macOS 14 Sonoma or later
-- Xcode 16+
+- Xcode 16+ (only if building from source)
 
-## Run
+## Run from source
 
 ```bash
 git clone https://github.com/nisaefendioglu/DeskCat.git
@@ -43,6 +53,15 @@ open FocusDesk.xcodeproj
 ```
 
 Press **Run** (⌘R). Look for Pip in the menu bar. Click Pip to open the desk popover; use the gear for Settings.
+
+### Build a DMG locally
+
+```bash
+./scripts/make-dmg.sh
+# → build/DeskCat-1.0.0.dmg
+```
+
+Optional: `VERSION=1.0.1 ./scripts/make-dmg.sh`
 
 > The Xcode project folder is still named `FocusDesk` for historical reasons; the product and display name are **DeskCat**.
 
