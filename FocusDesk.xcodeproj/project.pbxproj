@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* DeskcatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* DeskcatApp.swift */; };
+		A10000000000000000000002 /* MascotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* MascotState.swift */; };
+		A10000000000000000000003 /* PresenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* PresenceController.swift */; };
+		A10000000000000000000009 /* ActivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* ActivityMonitor.swift */; };
+		A10000000000000000000011 /* LanguageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* LanguageStore.swift */; };
+		A10000000000000000000012 /* ThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* ThemeStore.swift */; };
+		A1000000000000000000000A /* FocusDayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* FocusDayStore.swift */; };
+		A1000000000000000000000B /* NudgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* NudgeService.swift */; };
+		A1000000000000000000000C /* FocusDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* FocusDetailView.swift */; };
+		A1000000000000000000000D /* FloatingDeskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* FloatingDeskWidget.swift */; };
+		A1000000000000000000000E /* FloatingWidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* FloatingWidgetController.swift */; };
+		A1000000000000000000000F /* MenuBarPipIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* MenuBarPipIcon.swift */; };
+		A10000000000000000000004 /* DeskSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* DeskSceneView.swift */; };
+		A10000000000000000000005 /* PipMascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* PipMascotView.swift */; };
+		A10000000000000000000006 /* PopoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* PopoverContentView.swift */; };
+		A10000000000000000000007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* SettingsView.swift */; };
+		A10000000000000000000008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* Assets.xcassets */; };
+		A10000000000000000000010 /* meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* meow.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* DeskcatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskcatApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* MascotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotState.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* PresenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceController.swift; sourceTree = "<group>"; };
+		A2000000000000000000000B /* ActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityMonitor.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* LanguageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
+		A2000000000000000000000C /* FocusDayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusDayStore.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* NudgeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NudgeService.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* FocusDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusDetailView.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* FloatingDeskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingDeskWidget.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* FloatingWidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWidgetController.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* MenuBarPipIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPipIcon.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* DeskSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskSceneView.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* PipMascotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipMascotView.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* PopoverContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentView.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000000000000000000012 /* meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = meow.wav; path = FocusDesk/Resources/meow.wav; sourceTree = "<group>"; };
+		A20000000000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000000000000000000000A /* Deskcat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Deskcat.entitlements; sourceTree = "<group>"; };
+		A30000000000000000000001 /* FocusDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000000000000000000002 /* FocusDesk */,
+				A20000000000000000000012 /* meow.wav */,
+				A50000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000000000000000000002 /* FocusDesk */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* DeskcatApp.swift */,
+				A20000000000000000000010 /* FloatingWidgetController.swift */,
+				A50000000000000000000003 /* Models */,
+				A50000000000000000000004 /* Views */,
+				A20000000000000000000008 /* Assets.xcassets */,
+				A20000000000000000000009 /* Info.plist */,
+				A2000000000000000000000A /* Deskcat.entitlements */,
+			);
+			path = FocusDesk;
+			sourceTree = "<group>";
+		};
+		A50000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000002 /* MascotState.swift */,
+				A20000000000000000000003 /* PresenceController.swift */,
+				A2000000000000000000000B /* ActivityMonitor.swift */,
+				A2000000000000000000000C /* FocusDayStore.swift */,
+				A2000000000000000000000D /* NudgeService.swift */,
+				A20000000000000000000013 /* LanguageStore.swift */,
+				A20000000000000000000014 /* ThemeStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A50000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* DeskSceneView.swift */,
+				A20000000000000000000005 /* PipMascotView.swift */,
+				A20000000000000000000006 /* PopoverContentView.swift */,
+				A2000000000000000000000E /* FocusDetailView.swift */,
+				A2000000000000000000000F /* FloatingDeskWidget.swift */,
+				A20000000000000000000011 /* MenuBarPipIcon.swift */,
+				A20000000000000000000007 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A50000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000001 /* FocusDesk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000000000000000000001 /* FocusDesk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000000000000000000003 /* Build configuration list for PBXNativeTarget "FocusDesk" */;
+			buildPhases = (
+				A70000000000000000000001 /* Sources */,
+				A40000000000000000000001 /* Frameworks */,
+				A70000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusDesk;
+			productName = FocusDesk;
+			productReference = A30000000000000000000001 /* FocusDesk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A60000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A80000000000000000000001 /* Build configuration list for PBXProject "FocusDesk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50000000000000000000001;
+			productRefGroup = A50000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000000000000000000001 /* FocusDesk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* Assets.xcassets in Resources */,
+				A10000000000000000000010 /* meow.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* DeskcatApp.swift in Sources */,
+				A10000000000000000000002 /* MascotState.swift in Sources */,
+				A10000000000000000000003 /* PresenceController.swift in Sources */,
+				A10000000000000000000009 /* ActivityMonitor.swift in Sources */,
+				A1000000000000000000000A /* FocusDayStore.swift in Sources */,
+				A1000000000000000000000B /* NudgeService.swift in Sources */,
+				A10000000000000000000011 /* LanguageStore.swift in Sources */,
+				A10000000000000000000012 /* ThemeStore.swift in Sources */,
+				A10000000000000000000004 /* DeskSceneView.swift in Sources */,
+				A10000000000000000000005 /* PipMascotView.swift in Sources */,
+				A10000000000000000000006 /* PopoverContentView.swift in Sources */,
+				A1000000000000000000000C /* FocusDetailView.swift in Sources */,
+				A1000000000000000000000D /* FloatingDeskWidget.swift in Sources */,
+				A1000000000000000000000E /* FloatingWidgetController.swift in Sources */,
+				A1000000000000000000000F /* MenuBarPipIcon.swift in Sources */,
+				A10000000000000000000007 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80000000000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A80000000000000000000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FocusDesk/Deskcat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusDesk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nisaefendioglu.deskcat;
+				PRODUCT_NAME = DeskCat;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A80000000000000000000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FocusDesk/Deskcat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusDesk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nisaefendioglu.deskcat;
+				PRODUCT_NAME = DeskCat;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000000000000000000001 /* Build configuration list for PBXProject "FocusDesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000004 /* Debug */,
+				A80000000000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000000000000000000003 /* Build configuration list for PBXNativeTarget "FocusDesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000006 /* Debug */,
+				A80000000000000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}
