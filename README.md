@@ -1,0 +1,58 @@
+# DeskCat
+
+A tiny macOS menu bar companion. **Pip**, your desk cat, keeps you company while you work — and meows once when you drift away from the keyboard.
+
+![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-AppKit-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
+## What it does
+
+DeskCat lives in the menu bar. It watches idle time and the frontmost app (no “Start Focus” button) and updates Pip’s mood on a mini desk scene.
+
+| Pip mood | When |
+| --- | --- |
+| Focusing | You’re active at the keyboard |
+| Drifting / drowsy | You’ve been idle for a bit |
+| Asleep | Idle past your sleep threshold |
+
+After your chosen away time (default ~1 minute), Pip **meows once** for that away stretch. Coming back to the keyboard arms the next meow. Optional notification banner. Snooze (“Remind later”) silences meows for a while.
+
+## Features
+
+- Menu bar Pip (awake / drowsy / sleep icons)
+- Mini desk scene — lamp, notebook, coffee steam, writing pen
+- Automatic idle + frontmost-app tracking
+- Focus / distraction breakdown by app (today)
+- Customizable sleep threshold and meow delay
+- Appearance: System / Light / Dark
+- Language: System / English / Turkish
+- Menu bar–only app (`LSUIElement`) — no Dock icon while idle
+
+## Requirements
+
+- macOS 14 Sonoma or later
+- Xcode 16+
+
+## Run
+
+```bash
+git clone https://github.com/nisaefendioglu/DeskCat.git
+cd DeskCat
+open FocusDesk.xcodeproj
+```
+
+Press **Run** (⌘R). Look for Pip in the menu bar. Click Pip to open the desk popover; use the gear for Settings.
+
+> The Xcode project folder is still named `FocusDesk` for historical reasons; the product and display name are **DeskCat**.
+
+## Privacy
+
+- Idle time uses `CGEventSource` (no Accessibility permission required)
+- Frontmost app uses `NSWorkspace`
+- No accounts, no analytics, no network calls for tracking
+- Notifications are optional and only used for the away banner
+
+## License
+
+[MIT](LICENSE)
