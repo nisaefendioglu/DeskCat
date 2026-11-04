@@ -6,7 +6,7 @@ A tiny macOS menu bar companion. **Pip**, your desk cat, keeps you company while
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-AppKit-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-![DeskCat demo](docs/video/DeskCat.gif)
+https://github.com/user-attachments/assets/77f6f242-50c7-4737-95b2-04cc76675957
 
 ## What it does
 
