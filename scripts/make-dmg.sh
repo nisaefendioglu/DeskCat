@@ -32,8 +32,17 @@ if [[ ! -d "$APP" ]]; then
   exit 1
 fi
 
+# Ad-hoc codesign (no Developer ID identity required).
+# Full silent Gatekeeper pass still needs Apple Developer Program + notarization.
+echo "→ Ad-hoc codesigning ${PRODUCT_NAME}.app…"
+codesign --force --deep --sign - "$APP"
+codesign --verify --verbose=2 "$APP" || true
+codesign -dv --verbose=4 "$APP" 2>&1 | head -20 || true
+
 echo "→ Staging DMG contents…"
 cp -R "$APP" "$STAGE/"
+# Re-sign staged copy in case quarantine/attrs changed during copy
+codesign --force --deep --sign - "$STAGE/${PRODUCT_NAME}.app"
 ln -s /Applications "$STAGE/Applications"
 
 # Optional background — keep layout simple for hdiutil

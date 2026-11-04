@@ -6,9 +6,7 @@ A tiny macOS menu bar companion. **Pip**, your desk cat, keeps you company while
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-AppKit-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-<video src="docs/video/DeskCat.mp4" controls width="720" title="DeskCat demo"></video>
-
-[**▶ Watch the demo**](docs/video/DeskCat.mp4) (≈12s) — Pip on the mini desk, idle moods, and the away meow.
+![DeskCat demo](docs/video/DeskCat.gif)
 
 ## What it does
 
@@ -38,17 +36,28 @@ After your chosen away time (default ~1 minute), Pip **meows once** for that awa
 Grab the latest **`.dmg`** from [Releases](https://github.com/nisaefendioglu/DeskCat/releases):
 
 1. Open `DeskCat-x.y.z.dmg`
-2. Drag **DeskCat** into **Applications**
-3. Launch from Applications (or Spotlight)
+2. Drag **DeskCat.app** into **Applications** (don’t launch from inside the DMG)
+3. Open **DeskCat** from Applications (or Spotlight)
 
-### Open on macOS (Gatekeeper)
+### First open on macOS (Gatekeeper)
 
-The release DMG is **not** Developer ID–signed or notarized (that needs a paid Apple Developer account). Gatekeeper may show *“Apple could not verify DeskCat.app…”* — that is expected, not a bug in the app.
+The release is **ad-hoc signed** (not Developer ID / not notarized). Apple’s Gatekeeper warning is expected until the app is notarized with a paid [Apple Developer Program](https://developer.apple.com/programs/) membership ($99/yr).
 
-**Workaround (once):**
-1. In Finder, **right-click** `DeskCat.app` → **Open** → **Open** again in the dialog  
-2. Or: **System Settings → Privacy & Security** → **Open Anyway**  
-3. Or after installing: `xattr -cr /Applications/DeskCat.app` then open normally
+**Do this once after copying to Applications:**
+
+1. Try opening DeskCat from **Applications**.
+2. If you see *“Apple could not verify DeskCat.app is free of malware…”*:
+   - Open **System Settings → Privacy & Security**
+   - Scroll down to the message about DeskCat
+   - Click **Open Anyway**, then confirm **Open**
+3. Or clear the quarantine flag in Terminal, then open normally:
+
+```bash
+xattr -cr /Applications/DeskCat.app
+open /Applications/DeskCat.app
+```
+
+> On Sequoia / Sonoma, right-click → Open often no longer offers an **Open** button on the same dialog — **Open Anyway** in Privacy & Security is the reliable path.
 
 ## Requirements
 
