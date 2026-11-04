@@ -6,6 +6,10 @@ A tiny macOS menu bar companion. **Pip**, your desk cat, keeps you company while
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-AppKit-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
+<video src="docs/video/DeskCat.mp4" controls width="720" title="DeskCat demo"></video>
+
+[**▶ Watch the demo**](docs/video/DeskCat.mp4) (≈12s) — Pip on the mini desk, idle moods, and the away meow.
+
 ## What it does
 
 DeskCat lives in the menu bar. It watches idle time and the frontmost app (no “Start Focus” button) and updates Pip’s mood on a mini desk scene.
@@ -37,7 +41,14 @@ Grab the latest **`.dmg`** from [Releases](https://github.com/nisaefendioglu/Des
 2. Drag **DeskCat** into **Applications**
 3. Launch from Applications (or Spotlight)
 
-First launch on a Mac without Developer ID notarization: right-click DeskCat → **Open**, then confirm. You can also allow it under **System Settings → Privacy & Security**.
+### Open on macOS (Gatekeeper)
+
+The release DMG is **not** Developer ID–signed or notarized (that needs a paid Apple Developer account). Gatekeeper may show *“Apple could not verify DeskCat.app…”* — that is expected, not a bug in the app.
+
+**Workaround (once):**
+1. In Finder, **right-click** `DeskCat.app` → **Open** → **Open** again in the dialog  
+2. Or: **System Settings → Privacy & Security** → **Open Anyway**  
+3. Or after installing: `xattr -cr /Applications/DeskCat.app` then open normally
 
 ## Requirements
 
